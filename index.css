@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Calligraffitti&family=Mr+Dafoe&family=Rouge+Script&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+body{
+    background-image: url("Images/home-background.jpg");
+}
+
+#main-selections-container{
+    width: 99vw;
+    height: 100vh;
+    background-color: black;
+    
+}
+
+.main-container h2{
+    color: rgb(255,255,230);
+    font-family: Calligraffitti;
+    padding: 5px;
+}
+
+.main-container > nav{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.nav-items .nav-item{
+    display: inline-block;
+    color: rgb(255,255,230);
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px 30px;
+    
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: rgb(255,255,230);
+    transition: color .3s ease;
+}
+
+.nav-items a:hover{
+    color: rgb(83, 0, 0);
+}
+
+.main-container a{
+    text-decoration: none;
+    color: rgb(255,255,230);
+    transition: color .3s ease;
+    font-size: 24px;
+    font-family: Calligraffitti;
+}
+
+.user-menu-container{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 40%;
+    padding: 10px;
+    
+
+}
+
+.user-menu-container a:hover{
+    color: rgb(83, 0, 0);
+}
+
+.user-option{
+    margin-left: 30px;
+}
+
+.home-page-text{
+    font-family: Calligraffitti;
+    color: rgb(255,255,230);
+    position: absolute;
+    right: 12%;
+    top: 25%;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.review-container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: Calligraffitti;
+    width: 200px;
+    height: 150px;
+}
+
+.review-container div{
+    margin-top: 30px;
+    animation-name: move;
+   animation-duration: 31s;
+   animation-timing-function: linear;
+   animation-delay: 4s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes move{
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-600px);
+    }
+}
+
+@media screen and (max-width: 750px){
+    body{
+        background-size: 100vw 100vh;
+    }
+
+    .home-title{
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    .home-page-text{
+        position: absolute;
+        top: 300px;
+        left: 30px;
+    }
+}

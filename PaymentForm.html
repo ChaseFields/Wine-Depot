@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="PaymentForm.css">
+</head>
+<body>
+    <div id="checkout-page-container">
+        <div class="menu-container">
+            <div class="menu-div"></div>
+            <div class="menu-div"></div>
+            <div class="menu-div"></div>
+         
+        <ul id="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="MerchAndCart.html">Select</a></li>
+          <li><a href="AboutUs.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          
+        </ul>
+</div>      
+    <form id="payment-form">
+    <div id="container">
+        <h1>Payment Information</h1>
+        <div id="input-fields">
+            <p class="name-and-number">Name on Card</p>
+            <input type="text" placeholder="Jane S. Doe">
+            <p class="name-and-number">Card Number</p>
+            <input id="card-input" type="text" placeholder="5555-5555-5555-5555">
+            <div id="expiration-info">
+                <p class="expiration">Expiration Month/Year</p>
+                <select id="month-selection">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <select id="year-selection">
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                </select>
+            </div>
+            <button id="pay-button" type="submit">Submit Payment</button>
+            </form>
+
+            <p id="encrypt-message">*All credit card information is securely encrypted.</p>
+        </div>
+    </div>
+</div>
+    <script src="PaymentForm.js"></script>
+</body>
+</html>

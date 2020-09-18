@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Calligraffitti&family=Mr+Dafoe&family=Rouge+Script&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+    
+}
+
+body{
+   background: rgba(0,0,0,.9)
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 60px;
+}
+
+.menu-container .menu-div{
+    background-color: white;
+    width: 25px;
+    height: 5px;
+    margin-top: 5px;
+    margin-left: 35px;
+}
+
+
+.menu-container ul {
+    opacity: 0;
+    padding-left: 0;
+    transition: opacity .4s ease;
+    list-style: none;
+    position: absolute;
+    top: 35px;
+    left: 18px;
+}
+
+.menu-container:hover ul{
+    opacity: 1;
+}
+
+
+.menu-container li{
+    
+    background-color: rgb(20,20,25);
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 2px solid rgb(255,255,230);
+    padding: 12px;
+    font-size: 18px;
+    font-family: Calligraffitti;
+}
+
+
+.menu-container a {
+    text-decoration: none;
+    padding: 3px;
+    color: rgb(240,235,240);
+}
+
+.menu-container a:hover{
+    text-decoration: underline;
+}
+
+#container{
+    background-image: url("Images/vineyard.jpg");
+    border-radius: 7px;
+    max-height: 925px;
+    min-height: 570px;
+    max-width: 700px;
+    margin-left: 20vw;
+    margin-right: 15vw;
+}
+
+#expiration-info{
+    
+}
+
+
+
+#input-fields input{
+    padding: 12px;
+    font-size: 20px;
+    color: rgb(230,220,215);
+    border-radius: 7px;
+    background-color: rgb(20,20,25);
+    width: 65%;
+    margin-left: 12px;
+}
+
+
+#input-fields button{
+    width: 85%;
+    border-radius: 7px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(230,220,215);
+    font-size: 20px;
+    background-color: rgb(83,0,0);
+    padding: 10px;
+    margin: 25px 20px 0 40px;
+    
+
+}
+
+#input-fields button:hover{
+    background-color:rgba(65,10,0);
+    cursor: pointer;
+}
+
+#container h1{
+    color: rgb(18,20,25);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.name-and-number{
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(18,20,25)
+}
+
+.expiration{
+    font-size: 22px;
+    margin-left: 15px;
+    font-weight: bold;
+    color:rgb(18,20,25);
+}
+
+
+ select{
+     background-color: rgba(0,0,0,.6);
+     color: rgb(240,235,240);
+     padding: 12px;
+     margin: 10px 20px 10px 15px;
+     font-size: 20px;
+     color: rgb(230,220,215);
+     border-radius: 7px;
+     background-color: rgb(20,20,25);
+     width: 20vw;
+ } 
+
+ option{
+     background-color: rgba(0,0,0,.6);
+     color: rgb(240,235,240);
+     
+ }
+
+ #encrypt-message{
+     color: rgb(18,20,25);
+     font-size: 20px;
+     font-weight: bold;
+     margin-left: 10vw;
+ }
+
+
+::placeholder{
+    color: rgba(229, 227, 231, .3);
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 750px){
+
+    #container{
+        width: 80vw;
+        margin: 5% 3% 0 8%;
+    }
+    input{
+        width: 80%
+    }
+
+    select{
+        width: 45%;
+        margin: 0 8px 0 10px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    #input-fields button{
+        margin: 25px 0 10px 30px;
+    }
+}

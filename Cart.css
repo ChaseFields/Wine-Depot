@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Calligraffitti&family=Mr+Dafoe&family=Rouge+Script&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+#main-shopping-cart-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+}
+
+
+#shopping-cart-title{
+    border-bottom: 3px solid rgba(255,255,255,.4);
+
+}
+
+
+#shopping-cart-title h1{
+    color: rgb(240,235,240);
+    text-align: center;
+    font-family: Calligraffitti;
+}
+
+
+#shopping-cart-container > h3{
+    color: rgb(235,230,230);
+    margin-top: 15px;
+    font-family: Calligraffitti;
+    transition: all ease .3s;
+    margin-left: 18px;
+    width: 11%;
+}
+
+#shopping-cart-container > h3:hover{
+    cursor: pointer;
+    color: rgb(210,230,220);
+    margin-left: 12px;
+}
+
+#shopping-cart-container > h3 > a{
+    color: rgb(235,230,230);
+}
+
+#shopping-cart-container > h3 > a:hover{
+    color: rgb(200,220,210);
+}
+
+
+#shopping-cart-container{
+    color: rgb(235,230,230);
+    
+}
+
+#order-summary-container{
+    
+    background-color: rgba(255, 255, 255, 0.137);
+    margin-top: 20px;
+    padding: 10px;
+    width: 220px;
+    height: 265px;
+    margin-right: 8%;
+    border-radius: 4px;
+    position: fixed;
+    top: 130px;
+    right: 10px;
+    font-family: sans-serif;
+    
+}
+
+@keyframes borderAnimation {
+    
+        0%{border: none}
+        50%{border: 2px solid white}
+        100%{border: none}
+}
+
+@keyframes qtyborderAnimation {
+    
+    0%{background-color: rgb(54,58,61)}
+    50%{background-color: black}
+    100%{background-color: rgb(54,58,61)}
+}
+
+
+
+#order-summary-container button{
+    background-color: rgb(83,0,0);
+    padding: 4px;
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+#order-summary-container button:hover{
+    cursor: pointer;
+    background-color:rgb(102, 4, 4);
+    
+}
+
+#order-summary-title{
+    margin-bottom: 15px;
+    
+    font-weight: 500px;
+    font-size: 23px;
+    padding: 0;
+    text-align: center;
+}
+
+#order-details{
+    display: flex;
+    flex-direction: column;
+}
+
+#order-details p{
+    padding: 10px 0 15px 3px;
+}
+
+.cart-item-container{
+        border-bottom: 1px solid rgba(255,255,255,.4);
+        width: 45vw;
+        
+        margin-left: 05%;
+        margin-top: 40px;
+    }   
+
+.title{
+    
+        font-weight: 500px;
+        color: rgb(230,240,225);
+        font-size: 34px;
+        font-family: Calligraffitti;
+        margin-top: 8px;
+       
+    }
+    
+.item-subcontainer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+        word-wrap: none;
+}
+
+.subcontainer-image{
+    height: 210px;
+    width: 170px;
+    margin: 10px 0 15px 0;
+    border-radius: 5px;
+}
+
+.select-element{
+   width: 50px;
+    height: 40px;
+    background-color:  rgb(54,58,61);
+    border-radius: 4px;
+    color: rgb(235,230,230);
+    margin-left: 12px;
+    font-size: 20px;
+    
+}
+
+.option{
+    background-color: rgb(54,58,61);
+    color: rgb(235,230,230);
+    font-size: 20px;
+    padding: 3px;
+    
+}
+
+.new-input{
+    width: 0;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: rgb(25,35,40);
+    border: none; 
+    border-radius: 4px;
+    color: rgb(235,230,230);
+    font-size: 20px;
+    text-align: center;
+    transition: width .2s linear
+}
+
+.update-qty-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.update-qty-button {
+    background-color: rgb(240,235,240);
+    color: rgb(54,58,61);
+    border: 0;
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    padding: 3px;
+    font-weight: bolder;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.update-qty-button:hover{
+    cursor: pointer;
+    background-color: rgb(200,220,210);
+}
+
+.prices{
+    padding-left: 35px;
+    border-left: 1px solid rgba(255,255,255,.4);
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.delete-from-cart{
+    padding-left: 35px;
+    border-left: 1px solid rgba(255,255,255,.4);
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.delete-from-cart:hover{
+    color: rgb(200,220,210);
+    cursor: pointer;
+}
+
+#all-cart-deleted{
+    margin-top: 10%;
+    margin-left: 2%;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 950px){
+
+    #all-cart-deleted{
+        margin-top: 10%;
+        margin-left: 2%;
+        font-size: 18px;
+    }
+
+
+    .item-container{
+        width: 25vw;
+        margin-left: 15%;
+    }
+
+    .item-subcontainer{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 400px;
+        }
+
+    .item-subcontainer > .update-qty-div{
+        flex-direction: row;
+        margin: none;
+        
+    }
+
+    .item-subcontainer, button, img{
+        margin: 0;
+    }
+
+    .item-subcontainer select{
+        margin-left: 18px;
+    }
+
+    .new-input{
+        margin-left: 17px;
+    }
+
+    .item-subcontainer > .update-qty-div > button{
+        margin-top: 17px;
+        margin-left: 15px;
+    }
+
+    
+    .item-subcontainer .price{
+        border-left: none;
+        padding-left: 20px;
+    }
+
+    .item-subcontainer .delete-from-cart{
+        border-left: none;
+        padding-left: 20px;
+    }
+
+    #order-summary-container{
+        width: 160px;
+        top: 75px;
+     }
+
+    }
+
