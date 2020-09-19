@@ -2,8 +2,8 @@
 
 *{
     box-sizing: border-box;
-    margin: none;
-    padding: none;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -140,4 +140,35 @@ body{
         width: 400px;
         margin-left: 50px;
     }
+}
+
+@media screen and (max-width: 480px) {
+    #main-signup-container{
+    border-radius: 7px;
+    width: 400px;
+    height: 600px;
+    margin: 15px 15px 0 0;
+    }
+
+    #main-signup-container h1{
+        font-size: 23px;
+        margin-right: 25px;
+    }
+
+    .menu-container .menu-div{
+        background-color: white;
+        width: 25px;
+        height: 3px;
+        margin-top: 3px;
+        margin-left: 35px;
+    }
+
+    #input-fields{
+        margin-right: 15%;
+    }
+
+    #google-signup{
+        margin-right: 15%;
+    }
+    
 }

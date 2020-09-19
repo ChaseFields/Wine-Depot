@@ -133,3 +133,46 @@ body{
         left: 30px;
     }
 }
+
+@media screen and (max-width: 430px){
+
+    .nav-items{
+        margin-top: 30px;
+    }
+
+    .nav-item{
+        
+        color: rgb(255,255,230);
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-item a{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .user-menu-container{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       margin-right: 25px;
+        padding: 0;
+    }
+
+    .user-menu-container .user-option{
+
+
+        margin: 0;
+        white-space: nowrap;
+        font-size: 20px;
+    }  
+
+
+    .home-page-text{
+        left: 12px;
+    }
+     
+        
+}

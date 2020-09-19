@@ -65,6 +65,8 @@ payButton.addEventListener('click', () => {
     cardNumberValidation(cardInput.value);
 })
 
+
+//submits payment form data to a server (there currently is no backend for this project).
 paymentForm.addEventListener('submit', e => {
     e.preventDefault();
     const formData = new FormData(paymentForm);
